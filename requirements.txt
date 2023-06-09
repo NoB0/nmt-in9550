@@ -1,0 +1,8 @@
+torch==1.11.0
+confuse
+black
+tokenizers==0.12.1
+torchmetrics==0.9.3
+evaluate
+sacrebleu
+nltk

@@ -1,0 +1,22 @@
+# Training run configuration
+training_data: data/train_government.txt
+validation_data: data/valid_government.txt
+
+tokenizer: "data/gpu_tokenizer_20k.json"
+bpe_dropout: 0.0 
+
+model_path: data/models/rnn.pt
+# Model configuration
+model_type: rnn
+model_name: seq2seq_rnn
+model_config:
+  hidden_size: 256
+  encoder_num_layers: 2
+  encoder_dropout: 0.1
+  decoder_dropout: 0.1
+
+# Training configuration
+batch_size: 128
+epochs: 25
+teacher_forcing_ratio: 0.5
+patience: 3

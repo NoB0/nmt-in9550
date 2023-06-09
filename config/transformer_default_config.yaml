@@ -1,0 +1,22 @@
+# Training run configuration
+training_data: data/train_combined.txt
+validation_data: data/valid_combined.txt
+
+tokenizer: "data/gpu_tokenizer_20k.json"
+bpe_dropout: 0.0
+
+model_path: data/models/transformer.pt
+# Model configuration
+model_type: transformer
+model_name: seq2seq_transformer
+model_config:
+  hidden_size: 256
+  embedding_size: 256
+  encoder_num_layers: 3
+  decoder_num_layers: 3
+  num_heads: 2
+
+# Training configuration
+batch_size: 128
+epochs: 25
+patience: 3

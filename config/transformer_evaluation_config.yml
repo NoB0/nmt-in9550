@@ -1,0 +1,8 @@
+tokenizer: "data/gpu_tokenizer_20k.json"
+test_data: "data/diy.txt"
+
+model: data/models/transformer.pt
+
+output_file: data/predictions/transformer_prediction_diy.csv
+
+debug: False
